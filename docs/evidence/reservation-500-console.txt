@@ -1,0 +1,17 @@
+BUG-001 — Extractos de consola existentes; observaciones del 2026-10-30 UTC.
+No se volvió a ejecutar ni navegar para preparar este archivo.
+Solo líneas de error relacionadas con /api/room e interpretación JSON.
+
+console-2026-10-30T15-12-49-241Z.log
+[    1753ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://automationintesting.online/api/room/1:0
+[    1760ms] Unexpected token 'I', "Internal S"... is not valid JSON
+
+console-2026-10-30T15-13-14-447Z.log
+[    3317ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://automationintesting.online/api/room/2:0
+[    3319ms] Unexpected token 'I', "Internal S"... is not valid JSON
+[    9925ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://automationintesting.online/api/room/2:0
+
+console-2026-10-30T15-18-02-863Z.log
+[     787ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://automationintesting.online/api/room/1:0
+[    1059ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://automationintesting.online/api/room/2:0
+[    1329ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://automationintesting.online/api/room/3:0

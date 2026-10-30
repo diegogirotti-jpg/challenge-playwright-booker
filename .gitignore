@@ -1,0 +1,18 @@
+
+# Playwright
+node_modules/
+playwright-report/
+test-results/
+blob-report/
+.playwright-mcp/
+playwright/.auth/
+.env
+.env.*
+!.env.example
+auth.json
+.DS_Store
+.claude/settings.local.json
+.claude/settings.json
+
+# Configuración y agentes locales de Claude
+.claude/
