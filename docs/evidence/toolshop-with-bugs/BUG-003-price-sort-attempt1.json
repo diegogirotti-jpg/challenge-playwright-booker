@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-11-02T18:36:07.877Z",
+  "url": "https://with-bugs.practicesoftwaretesting.com/#/",
+  "products": [
+    {
+      "href": "#/product/23",
+      "name": "Cordless Drill 20V",
+      "price": "$125.23"
+    },
+    {
+      "href": "#/product/25",
+      "name": "Cordless Drill 18V",
+      "price": "$119.24"
+    },
+    {
+      "href": "#/product/22",
+      "name": "Random Orbit Sander",
+      "price": "$100.79"
+    },
+    {
+      "href": "#/product/21",
+      "name": "Circular Saw",
+      "price": "$80.19"
+    },
+    {
+      "href": "#/product/20",
+      "name": "Belt Sander",
+      "price": "$73.59"
+    },
+    {
+      "href": "#/product/24",
+      "name": "Cordless Drill 24V",
+      "price": "$66.54"
+    },
+    {
+      "href": "#/product/19",
+      "name": "Sheet Sander",
+      "price": "$58.48"
+    },
+    {
+      "href": "#/product/3",
+      "name": "Bolt Cutters",
+      "price": "$48.41"
+    },
+    {
+      "href": "#/product/26",
+      "name": "Cordless Drill 12V",
+      "price": "$46.50"
+    }
+  ],
+  "selected": "Price (Low - High)",
+  "title": "Practice Software Testing - Toolshop - v5.0 with bugs",
+  "value": "price,desc"
+}

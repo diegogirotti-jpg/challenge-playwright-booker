@@ -104,3 +104,7 @@ TC-001 y TC-002 no tienen pruebas vacías ni se cuentan como aprobados. Su autom
 4. Revalidar el bloqueo de reserva y completar TC-001/TC-002 cuando el entorno permita observar y ejecutar sus flujos.
 
 El resultado de Toolshop pertenece a otro proyecto y no acredita los escenarios de este challenge.
+
+## Reportes adicionales de capacitación
+
+[Índice de tres reportes en formato Santex](docs/bugs/README.md), con evidencias y mediciones. BUG-001 pertenece a Shady Meadows; BUG-002 y BUG-003 se reprodujeron en Toolshop con bugs sembrados. Estos reportes no completan los casos de reserva bloqueados ni acreditan por sí solos el Nivel 2.

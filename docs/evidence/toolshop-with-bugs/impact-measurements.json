@@ -1,0 +1,51 @@
+{
+  "BUG-002": {
+    "attempts": 2,
+    "contact_instead_of_home": 2
+  },
+  "BUG-003": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "selected": "Price (Low - High)",
+        "value": "price,desc",
+        "products": 9,
+        "adjacent_pairs": 8,
+        "ascending_violations": 8,
+        "first_price": "125.23",
+        "last_price": "46.50",
+        "violation_indexes_zero_based": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "attempt": 2,
+        "selected": "Price (Low - High)",
+        "value": "price,desc",
+        "products": 9,
+        "adjacent_pairs": 8,
+        "ascending_violations": 8,
+        "first_price": "125.23",
+        "last_price": "46.50",
+        "violation_indexes_zero_based": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    ],
+    "scope": "Primera página visible; dos intentos en la misma sesión. No mide usuarios ni catálogo completo."
+  }
+}

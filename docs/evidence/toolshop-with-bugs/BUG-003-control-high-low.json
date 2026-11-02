@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-11-02T18:36:40.293Z",
+  "url": "https://with-bugs.practicesoftwaretesting.com/#/",
+  "products": [
+    {
+      "href": "#/product/17",
+      "name": "Phillips Screwdriver",
+      "price": "$4.92"
+    },
+    {
+      "href": "#/product/5",
+      "name": "Slip Joint Pliers",
+      "price": "$9.17"
+    },
+    {
+      "href": "#/product/9",
+      "name": "Thor Hammer",
+      "price": "$11.14"
+    },
+    {
+      "href": "#/product/8",
+      "name": "Claw Hammer",
+      "price": "$11.48"
+    },
+    {
+      "href": "#/product/2",
+      "name": "Pliers",
+      "price": "$12.01"
+    },
+    {
+      "href": "#/product/13",
+      "name": "Wood Saw",
+      "price": "$12.18"
+    },
+    {
+      "href": "#/product/7",
+      "name": "Hammer",
+      "price": "$12.58"
+    },
+    {
+      "href": "#/product/6",
+      "name": "Claw Hammer with Shock Reduction Grip",
+      "price": "$13.41"
+    },
+    {
+      "href": "#/product/18",
+      "name": "Mini Screwdriver",
+      "price": "$13.96"
+    }
+  ],
+  "selected": "Price (High - Low)",
+  "title": "Practice Software Testing - Toolshop - v5.0 with bugs",
+  "value": "price,asc"
+}
