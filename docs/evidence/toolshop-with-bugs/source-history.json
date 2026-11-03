@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-11-03",
+  "repository": "https://github.com/testsmith-io/practice-software-testing",
+  "rootCommit": "d8e53bda8b0c4fa1d0ca3d38134e60b9aeb0b387",
+  "rootParents": [],
+  "commitDate": "2023-01-16T13:39:06Z",
+  "commitMessage": "initial commit",
+  "referenceSnapshot": "ae7caecb811dd8952c09d997e69be7cb946ecd44",
+  "deploymentCommit": null,
+  "files": [
+    {
+      "path": "sprint5-with-bugs/UI/src/app/header/header.component.html",
+      "initialLines": [
+        {
+          "line": 13,
+          "text": "<a class=\"nav-link active\" data-test=\"nav-home\" aria-current=\"page\" routerLink=\"/contact\">Home</a>"
+        }
+      ],
+      "initialUrl": "https://github.com/testsmith-io/practice-software-testing/blob/d8e53bda8b0c4fa1d0ca3d38134e60b9aeb0b387/sprint5-with-bugs/UI/src/app/header/header.component.html",
+      "historyShas": [
+        "ba00aceeeb0b5974450db6a81ef3545119b83315",
+        "e4b14eb0071358995d30468a00444b63122188df",
+        "c28157e748831db093e3a76b7abc7fc1e1c72337",
+        "55525250e07b82e0537a7cb8815da93d1892ba51",
+        "7b8524be93034fb98d8cb66c9903bce8c75d3378",
+        "10badbce166fe5f378fb2c1ce5112ed21d5c0f5c",
+        "085b04edb46c1b788fb06019672e45115b4ece1b",
+        "dc5055b4236683eacf98299ff1f6184dd122ed38",
+        "6aaeb9e95b8700988cb7b862b4ef2e3c86daf993",
+        "170021e7eaffe2e864438cec34cb4eb44e781555",
+        "d8e53bda8b0c4fa1d0ca3d38134e60b9aeb0b387"
+      ]
+    },
+    {
+      "path": "sprint5-with-bugs/UI/src/app/products/overview/overview.component.html",
+      "initialLines": [
+        {
+          "line": 20,
+          "text": "<option value=\"price,asc\">Price (High - Low)</option>"
+        },
+        {
+          "line": 21,
+          "text": "<option value=\"price,desc\">Price (Low - High)</option>"
+        }
+      ],
+      "initialUrl": "https://github.com/testsmith-io/practice-software-testing/blob/d8e53bda8b0c4fa1d0ca3d38134e60b9aeb0b387/sprint5-with-bugs/UI/src/app/products/overview/overview.component.html",
+      "historyShas": [
+        "f55abcbc8b52389299e5c9b5dc607d86ba89ed16",
+        "977b37b3b914c89fa4c97f74beb18991873b955f",
+        "6b445bfe3e7f63ab69d40bbbe38cd6d0adf72e12",
+        "e4b14eb0071358995d30468a00444b63122188df",
+        "c28157e748831db093e3a76b7abc7fc1e1c72337",
+        "55525250e07b82e0537a7cb8815da93d1892ba51",
+        "7b8524be93034fb98d8cb66c9903bce8c75d3378",
+        "764a2b84dbbd476d778a8cd2a203dd6efe08008a",
+        "085b04edb46c1b788fb06019672e45115b4ece1b",
+        "c3766861af1b8ab7b8024982ee5915d90acddd5d",
+        "b755d450f220f0e7b0672a7aa35f0fc3f590616c",
+        "74a74da548657f63f268c4ed28da9af5c66a9d72",
+        "a6d8d6c3fd7734edbae2fa685865bff24a4c41d6",
+        "af9844825b10bae601a59357ecb84f04c80067b5",
+        "63372200ff537bd2fd974afb04f7e2f0798f43ad",
+        "d8e53bda8b0c4fa1d0ca3d38134e60b9aeb0b387"
+      ]
+    }
+  ]
+}

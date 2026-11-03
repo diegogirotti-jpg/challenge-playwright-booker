@@ -53,14 +53,17 @@ Un visitante que pulsa Home llega al formulario de Contacto en lugar de permanec
 
 ## Fuente del error (Nivel 2)
 - **Archivo y clase**: código público de referencia: [header.component.html:24](https://github.com/testsmith-io/practice-software-testing/blob/ae7caecb811dd8952c09d997e69be7cb946ecd44/sprint5-with-bugs/UI/src/app/header/header.component.html#L24), asociado a [HeaderComponent:18](https://github.com/testsmith-io/practice-software-testing/blob/ae7caecb811dd8952c09d997e69be7cb946ecd44/sprint5-with-bugs/UI/src/app/header/header.component.ts#L18). El fallo está en un binding del template, no en un método identificado como causante.
-- **Commit o PR que lo introdujo**: [FALTA DATO: cambio de introducción]. Se consultó la instantánea upstream `ae7caecb811dd8952c09d997e69be7cb946ecd44`; ese SHA no se presenta como commit causante ni como despliegue confirmado.
-- **Cómo lo encontraste**: comparar el `href` del enlace visible con el template público; ambos apuntan a Contacto.
+- **Commit o PR que lo introdujo**: incorporación del template defectuoso en el commit raíz público [d8e53bd](https://github.com/testsmith-io/practice-software-testing/commit/d8e53bda8b0c4fa1d0ca3d38134e60b9aeb0b387), sin padres. [Contenido inicial, línea 13](https://github.com/testsmith-io/practice-software-testing/blob/d8e53bda8b0c4fa1d0ca3d38134e60b9aeb0b387/sprint5-with-bugs/UI/src/app/header/header.component.html#L13). No hay revisión anterior en este historial; no se identifica este SHA como build desplegado. Ver [investigación y límites](../evidence/toolshop-with-bugs/source-investigation.md).
+- **Cómo lo encontraste**: comparar el `href` del enlace visible con el template público; ambos apuntan a Contacto. El 03/11 se consultó el historial por ruta y se verificó que el commit raíz ya agrega ese destino incorrecto.
 - **Causa**: en el template consultado, Home tiene `routerLink="/contact"` en vez del destino de catálogo. La configuración incorrecta está confirmada en ese código; su coincidencia con el síntoma desplegado es probable, sin trazabilidad de build.
-- **Certeza**: Confirmada para la configuración de la instantánea pública y el comportamiento medido; Probable para vincular exactamente esa fuente con el despliegue. **Nivel 2 parcial: el cambio de introducción sigue sin identificar.**
+- **Certeza**: Confirmada para la configuración de la instantánea pública y el comportamiento medido; Probable para vincular exactamente esa fuente con el despliegue. Archivo, clase y cambio identificados en la fuente pública. La relación exacta con el build desplegado permanece sin confirmar.
 
 ## Solución propuesta (Nivel 3, opcional)
 - **Cambio propuesto**: corregir solo el destino de Home a la ruta de catálogo, después de confirmar el routing de la versión objetivo. No se modificó la app ni se implementó el fix.
-- **Test que lo cubre**: propuesto, no implementado: desde el catálogo y desde Contacto, pulsar Home y comprobar ruta de inicio y productos visibles. La reproducción documentada partió solo del catálogo.
+- **Test que lo cubre**: implementado el 03/11: [BUG-002 automatizado](https://github.com/diegogirotti-jpg/qa-training-playwright/blob/c2f7ea5/diagnostics/specs/bugs.spec.ts#L42) parte desde Contacto y exige ruta de inicio y productos visibles. La reproducción histórica de este reporte partió del catálogo; ese inicio adicional no está automatizado.
 - **Riesgo**: revisar menú móvil y escritorio, resolución de rutas y navegación autenticada antes de aprobar el arreglo.
 
 **Estado**: reproducido y documentado el 2026-11-02. Hallazgo conocido de una demo intencionalmente defectuosa; no se presenta como vulnerabilidad nueva ni como corrección aprobada.
+
+## Actualización del 03/11/2026
+La comprobación automática volvió a reproducir el defecto en [Actions](https://github.com/diegogirotti-jpg/qa-training-playwright/actions/runs/41641759716). El artefacto `toolshop-diagnostic` contiene reporte, versión del navegador, datos, captura y trace de esa corrida. Las mediciones del 02/11 arriba no se mezclan con la nueva ejecución.
